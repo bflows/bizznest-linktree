@@ -2,7 +2,12 @@
 
 A Linktree-style page in React displaying my profile and social links with one JavaScript feature that brings it to life.
 
-### [🟢 Live Demo Link](https://bflows.github.io/bizznest-linktree)
+### [🟢 Deployed Project Link](https://bflows.github.io/bizznest-linktree)
+
+## Lighthouse Score (99+)
+<img
+  src="https://i.imgur.com/eG0wa19.png"
+/>
 
 ## JavaScript Feature
 
