@@ -1,6 +1,6 @@
 import Tag from "./Tag";
-import BackgroundImg from "../assets/background-img.jpg";
-import ProfileImg from "../assets/profile-img.jpeg";
+import BackgroundImg from "../assets/background-img.webp";
+import ProfileImg from "../assets/profile-img.webp";
 
 export default function Header({ showStats }: { showStats: boolean }) {
   return (
@@ -9,6 +9,8 @@ export default function Header({ showStats }: { showStats: boolean }) {
         <img
           src={ProfileImg}
           alt="Profile image"
+          width={100}
+          height={100}
           className="size-25 rounded-full object-cover object-top ring-2 ring-brand200"
         />
         <h1 className="text-h4 font-bold mt-4 text-brand50">
@@ -23,6 +25,9 @@ export default function Header({ showStats }: { showStats: boolean }) {
         <img
           src={BackgroundImg}
           alt="Background image"
+          fetchPriority="high"
+          height={400}
+          width={1400}
           className="h-full w-full object-cover object-center"
         />
         <div
