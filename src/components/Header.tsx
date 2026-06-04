@@ -6,13 +6,15 @@ export default function Header({ showStats }: { showStats: boolean }) {
   return (
     <div className="mt-20">
       <header className="z-10 flex flex-col items-center max-w-7xl mx-auto px-6">
-        <img
-          src={ProfileImg}
-          alt="Profile image"
-          width={100}
-          height={100}
-          className="size-25 rounded-full object-cover object-top ring-2 ring-brand200"
-        />
+        <div className="size-25 overflow-hidden rounded-full ring-2 ring-brand200">
+          <img
+            src={ProfileImg}
+            alt="Profile image"
+            width={100}
+            height={100}
+            className="w-full h-full rounded-full object-cover scale-125"
+          />
+        </div>
         <h1 className="text-h4 font-bold mt-4 text-brand50">
           Billy Flowers
         </h1>
