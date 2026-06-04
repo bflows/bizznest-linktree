@@ -8,7 +8,7 @@ export default function Tag({ showStats }: { showStats: boolean }) {
       {showStats ? (
         <div className={style}>
           <MousePointerClick className="size-5.25" />
-          <p className="text-small">Total clicks (last 7 days)</p>
+          <p className="text-small">Total clicks from mock data (last 7 days)</p>
         </div>
       ) : (
         <div className={style}>
