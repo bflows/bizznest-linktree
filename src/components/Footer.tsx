@@ -1,11 +1,13 @@
 export default function Footer() {
   const date = new Date();
-  const currentYear = date.getFullYear();
+  const hour = date.getHours();
+
+  const timeEmoji = hour >= 6 && hour < 20 ? "🌞" : "🌚";
 
   return (
     <footer className="mt-12 pb-4 flex items-center justify-center">
       <p className="text-small text-brand400">
-        © {currentYear} Billy Flowers
+        Designed in Figma, built with React and Tailwind CSS {timeEmoji}
       </p>
     </footer>
   );
