@@ -53,7 +53,7 @@ export default function Header({ showStats, onToggle }: { showStats: boolean; on
             />
             <img
               src={BackgroundImgMd}
-              alt=""
+              alt="Background image"
               fetchPriority="high"
               width={768}
               height={512}
