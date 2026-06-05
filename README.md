@@ -25,7 +25,7 @@ The header tag also swaps from location to “Total clicks (last 7 days)” so t
 
 #### Why this feature
 
-Linktree pages are often static lists of URLs. A lightweight analytics layer makes the page feel more like a product dashboard and shows how each destination performs at a glance without leaving the profile view.
+Linktree pages are often static lists of URLs. A lightweight analytics layer shows how each destination performs at a glance without leaving the profile view.
 
 #### Tricky bits
 
