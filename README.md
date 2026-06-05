@@ -31,12 +31,12 @@ Linktree pages are often static lists of URLs. A lightweight analytics layer sho
 
 - **Sparkline scaling** — daily values are mapped to SVG coordinates using min/max normalization so flat or noisy series still read clearly; a zero range falls back to `1` to avoid dividing by zero.
 - **Dual card modes** — one `LinkCard` toggles between description and stats via `showStats`, keeping layout stable while swapping middle content and conditionally rendering the sparkline on the right.
-- **Trend styling** — change percent, icon, and sparkline stroke stay in sync through a single `positive` flag derived from `changePercent >= 0`.
+- **Trend styling** — change %, icon, and sparkline stroke stay in sync through a single `positive` flag based on `changePercent >= 0`.
 
 #### With more time
 
-- Implement real click tracking `localStorage` instead of mock data in `src/data/linkStats.ts`.
-- Compute change % from `history` rather than storing it separately.
+- Implement real click tracking using `localStorage` instead of mock data in `src/data/linkStats.ts`.
+- Calculate change % from `history` rather than storing it separately.
 - Animate sparkline draw-in and support empty or single-point histories.
 
 The mock data lives in `src/data/linkStats.ts` (clicks, `changePercent`, and 7-day `history` per link).
